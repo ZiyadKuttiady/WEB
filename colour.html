@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Background</title>
+</head>
+
+<body>
+    <center>
+        <script type="text/javascript">
+            function bgc(option) {
+                var backcolor = new Array();
+                backcolor[0] = "red";
+                backcolor[1] = "green";
+                backcolor[2] = "blue";
+                backcolor[3] = "rgb(69, 223, 69)";
+                document.body.style.backgroundColor = backcolor[option];
+            }
+        </script>
+        <button onclick="bgc(0)">Red</button>
+        <button onclick="bgc(1)">Green</button>
+        <button onclick="bgc(2)">Blue</button>
+        <button onclick="bgc(3)">Light Green</button>
+        <h1>Changing background Colour</h1>
+
+    </center>
+
+</body>
+
+</html>

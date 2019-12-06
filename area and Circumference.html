@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area & Cricumference</title>
+</head>
+<body>
+<h3>Area and Circumference of a  Circle </h3>
+<script type="text/javascript">
+	function circle() {
+		var r=document.form1.txtRadious.value;
+		var area=r*r*3.14;
+		var circum=2*r*3.14;
+		document.write("<p> The Area of circle is "+area+"</p>");
+		document.write("<p> The Circumference of Circle is "+circum+"</p>");
+	}
+</script>
+<form name="form1">
+	 Enter the Radious of Circle
+	 <input type="text" name="txtRadious" size="30">
+	 <br>
+	 <input type="button" value="Calculate"  onclick="circle()">
+
+</form>
+</body>
+</html>
