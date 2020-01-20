@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Displaying Multiplication Table</title>
+	<script  language="javascript" type="text/javascript">
+		function disp(id) {
+			var num1=document.calc.number1.value;
+			var num2=document.calc.number2.value;
+			if(num1==""){
+				document.getElementById('message1').style.visibility="visibile";
+				document.getElementById('message1').innerHtml="Number must not be blank";
+				document.getElementById('res').style.visibility="hidden";
+				document.calc.number1.focus();
+				return false;
+			}
+		else{
+             if(isNAN(num1)){
+             	document.getElementById('message1').style.visibility="visibile";
+             	document.getElementById('message1').innerHtml="Enter a Valid Number";
+             	document.getElementById('res').style.visibility="hidden";
+				document.calc.number1.focus();
+				return false;
+             }
+           }
+           if(num2==""){
+           	    document.getElementById('message2').style.visibility="visibile";
+				document.getElementById('message2').innerHtml="Number must not be blank";
+				document.getElementById('res').style.visibility="hidden";
+				document.calc.number2.focus();
+				return false;
+           } 
+        else{
+             if(isNAN(num1)){
+             	document.getElementById('message2').style.visibility="visibile";
+             	document.getElementById('message2').innerHtml="Enter a Valid Number";
+             	document.getElementById('res').style.visibility="hidden";
+				document.calc.number2.focus();
+				return false;
+			}	   
+	       }
+	       var result="";
+	       if (id=="Add") {
+	       	result=num1+"+"+num2+"="+String((Number(num1)+Number(num2)));
+	       }
+	       else{
+	       	if (id=="Subtract") 
+	       	---------------------------
+Sublime Text
+---------------------------
+Error trying to parse settings: Unexpected character, expected a comma or closing bracket in Packages\User\Preferences.sublime-settings:4:2
+---------------------------
+OK   
+---------------------------
+
+
+	       
+{
+	       		
+	       	}
+
+	       }
+	</script>
+</head>
+<body>
+
+</body>
+</html>
